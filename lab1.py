@@ -80,16 +80,6 @@ def N_gramm(text, n, k):
         i += 1
     print("\n")
     
-
-
-
-text2 =  '''Taxi dispatcher yes to the client: Get out in 5 minutes. 
-                    Mazda is  yes waiting for you, metallic blue. 
-                    Further, accor.ding to the driver: 
-                    A woman come yes s out of the ent.rance. 
-                    She walked around the car. 2 times, 
-                    approached the ajar window and asked 
-                    Are you blue Vitalik? ban ban ban ban'''
 text3 = ''' Появился, значит, в Зоне Чёрный сталкер. К лагерю ночью повадился ходить 
             и там сует руку в палатку и говорит: Водички попить! А если не дашь 
             хлебнуть из фляжки или наружу полезешь - быстро пришибет! А раз мужик один решил пошутить: 
@@ -97,9 +87,18 @@ text3 = ''' Появился, значит, в Зоне Чёрный сталк�
             Полез, значит, и попрошайничает жалостно: Водички, водички попить. 
             А тут из палатки навстречу высовывается рука и за горло его - цап! 
             И сиплый голосок отзывается тихонько: А тебе моя водичка зачем нужна?'''
-text = "computerscienceandartific ialintelligence"
 
-N_gramm(text3,2, 10)
+#text = "computerscienceandartific ialintelligence"
+
+print("input k:")
+k = int(input())
+print("input n:")
+n = int(input())
+print("n gram:")
+N_gramm(text3,n,k)
+print("words amount:")
 word_counter(text3)
+print("median value:")
 print(median_am(text3))
+print("average value:")
 print(average_am(text3))
